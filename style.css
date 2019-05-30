@@ -1,6 +1,38 @@
 *{
     box-sizing: border-box;
 }
+.container {
+    width: 960px;
+    flex: 1 0 auto;
+}
+
+body {
+    background-image: url(./images/dynamic-style.png);
+}
+
+.aman {
+    background-color: white;
+}
+
+.fixedFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding:10px;                        
+    color:#ffffff;
+    background-color:#666666;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+}
+#about {
+    margin-left: 563px;
+}
+#contact {
+    padding-right: 0px;
+}
+#navbar-header {
+    margin-left: 192px;
+}
 .navbar{
     
     background-color:#ffffff;
@@ -58,7 +90,7 @@ img{
 }
 footer{
     padding:10px;
-    margin-top: 155px;
+    margin-bottom: 155px;
     width:100%;   
     /* position: fixed;                         */
     color:#ffffff;
@@ -74,10 +106,11 @@ header #branding h1{
     color:white;
     background-color:#4aaaa5;
 }
+
      @media screen and (max-width:768px){
         .container{
             width:100%;
-            max-width: 960px;
+            
         }
         .footer{
             width:100%;
@@ -88,7 +121,17 @@ header #branding h1{
         footer {
             margin-top: 363px;
         }
-
+        .navbar{
+            width:100%;
+        }#navbar-header{
+            width:100%;
+        }
+        body{
+            width:100%;
+        }
+        .nav-item{
+            width:100%;
+        }
     }
 
     @media screen and (max-width:640px){
@@ -96,13 +139,49 @@ header #branding h1{
             width:100%;
         
         }
+
         .header{
         width:100%;
         }
-        /* #branding{
+        #branding{
+            width:100%;
+        }
+        .navbar{
+            width:100%;
+        }
+        #navbar-header{
+            width:100%;
+        }
+        body{
+            width:100%;
+        }
+        .nav-item{
+            width:100%;
+        }
+    } 
+
+    @media screen and (max-width:960px){
+        .container{
+            width:100%;
+        
+        }
+
+        .header{
+        width:100%;
+        }
+        #branding{
             width:100%;
         }
         nav{
             width:100%;
-        } */
+        }
+        #navbar-header{
+            width:100%;
+        }
+        body{
+            width:100%;
+        }
+        .nav-item{
+            width:100%;
+        }
     } 

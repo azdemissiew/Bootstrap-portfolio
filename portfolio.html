@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <!--header-->
-            <div class="navbar-header">
-                <h1><span class="highlight"> Amanuel Demissiew</span></h1>
-            </div>
-             <!--menu items-->
-             <div>
-                 <ul class="nav nav-pills nav-fill">
-                     <li class="nav-item">
-                         <a class="nav-link active" href="index.html">about</a>
+        <nav class="navbar">
+                <div class="header">
+                    <div class="navbar-header" id="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="about" href="index.html">About</a>
                         </li>
-                     <li class="nav-item">
-                         <a class="nav-link"class="current" href="portfolio.html">portfolio</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html" id="portfolio">Portfolio</a>
                         </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="contact.html">contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" id="contact">Contact</a>
                         </li>
-
-                 </ul>
-             </div>
-        </div>
-       
-    </nav>
+                    </ul>
+                </div>
+            </nav>
+        
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-4">
@@ -59,15 +56,8 @@
         </div> -->
         <div class="col-md-2"></div>
       </div>
-
-      <footer class="page-footer font-small blue">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-   
-        </div>
-        <!-- Copyright -->
-      
-      </footer>
+      <div class="fixedFooter">
+            © 2018 Copyright:
+        </div>  
 </body>
 </html>
